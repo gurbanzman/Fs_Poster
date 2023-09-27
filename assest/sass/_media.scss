@@ -1,0 +1,118 @@
+@media screen and (max-width:360px){
+   .new-button,
+   .menu-link{
+      display: block !important;
+   }.end-main-container,
+   .nav-button,
+   .nav-list{
+      display: none !important;
+   }
+   .logo-content{
+      @include flexDirection(row, null, center, null, 12px !important);
+      h5{
+         font-size: 18px !important;
+      }
+   }
+   .block-button{
+      @include flexDirection(row, center, center, null, 16px !important);
+   }
+   .navbar{
+      @include flexDirection(row, null, center, null, 48px !important);
+      width: 94% !important;
+   }
+   .main-container{
+      width: 95%;
+      margin: auto;
+      .main-link{
+         width: 93% !important; 
+         // margin: 0 !important;
+         @include flexDirection(row, null !important, center, null, 24px !important);
+         .span-link{
+            @include flexDirection(row, null !important, center, null, 32px !important);
+            span{
+               padding: 0 !important;
+               &:active{
+                  padding: 7px 10px 8px 10px !important;
+               }
+            }
+            .nth-7{
+               display: none;
+            }
+         }
+         .img-li{
+            padding: 0 !important;
+         }
+      }
+      .main-button{
+         margin-left: 3px;
+         .btn-small{
+            padding: 4px 5px !important;
+         }
+      }
+      .image-content:nth-child(n+3){
+         display: none;
+      }
+   }
+   .image-container{
+      @include flexDirection(column !important, center !important, center !important, null, 32px);
+   }
+   .max{
+      max-width: 100% !important;
+      min-width: 100% !important;
+   }
+   .footer-container{
+      margin-top: 20% !important;
+      .fo-content{
+         width: 90% !important;
+      }
+   }
+   .fo-first{
+      @include flexDirection(column !important,center !important,center !important, null !important, 40px);
+      .logo-footer{
+         width: 100% !important;
+         // padding: 0 !important;
+         span{
+            width: 100% !important;
+            text-align: center !important;
+         }
+         .gap-same{
+            @include flexDirection(column, center !important, center !important, null, 24px);
+         }
+      }
+      .footer-main{
+         @include flexDirection(column, center !important, center !important, null, 32px);
+      }
+      .flex{
+         @include flexDirection(column, null, center !important, null, 24px);
+      }
+      .end-cont{
+         text-align: center;
+      }
+      .cont-link{
+         @include flexDirection(row, center !important, center, null, null !important);
+         span{
+            width: 56% !important;
+            padding: 0 !important;
+         }
+      }
+      .icon-link{
+         @include flexDirection(row, center !important, center !important, null, 24px);
+         a:focus{
+            background: map-get($btns,"--basic-300");
+         }
+      }
+   }
+   .copyright{
+      border-top: 1px solid map-get($btns,"--basic-300");
+      padding: 20px !important;
+      .copy-two{
+         display: none !important;
+      }
+      .copy-one{
+         margin: auto !important;
+         .copy-font{
+            font-size: 15px !important;
+         }
+   }
+   }
+}

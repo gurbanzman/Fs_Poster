@@ -1,0 +1,104 @@
+.main-container{
+   padding-top: 50px;
+   .main-button{
+      @include flexDirection(row, center, center, null, 24px);
+      margin-top: 32px;
+   }
+   .image-container{
+      @include flexDirection(column, null, null, null, 48px);
+      margin-top: 64px
+   }
+   .image-content{
+      @include flexDirection(row, null, flex-start, wrap, 32px);
+      .cont-width{
+         width: 32%;
+         padding: 0 0 32px 0;
+         transition: all 0.2s ease-in-out;
+         border-radius: 8px;
+         background: map-get($btns,"--text-color-white-ag");
+         box-shadow: 0px 16px 32px 0px rgba(118, 127, 154, 0.08);
+         &:hover{
+            filter: drop-shadow(0 0 0.10rem crimson);
+            cursor: pointer;
+         }
+         @include flexDirection(column, null, flex-start, null, 24px);
+         img{
+            width: 100%;
+            padding: 8px 8px 0 8px;
+         }
+         h6{
+            padding: 0 16px;
+         }
+         .main-button2{
+            padding: 0 0 0 16px;
+         }
+      }
+   }
+   .cont-width:nth-child(2){
+      padding: 0 0 60px 0;
+   }
+   .main-link{
+      width: 35%;
+      margin: auto;
+      padding-top: 90px;
+      @include flexDirection(row, space-between, center, null, 64px);
+      .img-li{
+         @include flexDirection(row, center, center, null, null);
+         border-radius: 8px;
+      }
+      .img-li:hover{
+         background: map-get($btns,"--basic-300");
+      }
+      .span-link{
+         @include flexDirection(row, space-between, center, null, 40px);
+         span{
+            padding: 7px 10px 8px 10px;
+            transition: all 0.2s ease-in-out;
+            border-radius: 8px;
+         }
+         span:hover{
+            background: map-get($btns, "--danger-500-default");
+            color: map-get($btns , "--text-color-white-ag");
+         }
+      }
+   }
+   .end-main-container{
+      background: map-get($btns, "--danger-400");
+      border-radius: 16px;
+      padding: 48px 64px;
+      margin-top: 93px;
+      position: relative;
+      .end-main-class{
+         @include flexDirection(row, space-between, center, null, null);
+         .text{
+            @include flexDirection(column, null, flex-start, null, 16px);
+            p{
+               width: 58%;
+            }
+         }
+         .button-end{
+            @include flexDirection(row, flex-end, center, null, 24px);
+            width: 50%;
+            .btn-success{
+               transition: all 0.2s ease-in-out;
+               &:hover{
+                  background: map-get($btns, "--basic-800");
+                  color: map-get($btns, "--text-color-white-ag");
+               }
+            }
+         }
+      }
+      .absolute-container{
+         position: absolute;
+         left: 0;
+         bottom: -20px;
+         z-index: 1;
+         .absolute-content{
+            position: absolute;
+            left: -18px;
+            bottom: 0;
+            z-index: 2;
+         }
+      }
+   }
+}

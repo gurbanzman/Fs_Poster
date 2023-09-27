@@ -1,0 +1,19 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Euclid Circular A';
+}
+button{
+   outline: none;
+   border: none;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+   transition: all 0.2s ease-in-out;
+}

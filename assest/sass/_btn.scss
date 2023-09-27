@@ -1,0 +1,42 @@
+.btn-small{
+   padding: 6px 16px;
+   border: 1px solid map-get($btns,"--basic-500");
+   background: map-get($btns,"--text-color-white-ag");
+   border-radius: 4px;
+   transition: all 0.2s ease-in-out;
+   &:hover{
+      background: map-get($btns, "--danger-500-default");
+      color: map-get($btns , "--text-color-white-ag");
+      border: 1px solid map-get($btns, "--danger-500-default"); 
+   }
+}
+.btn-success{
+   padding: 12px 28px;
+   border-radius: 8px;
+   background:map-get($btns , "--text-color-white-ag");
+   width: 30%;
+}
+.btn-m{
+   padding: 12px 26px;
+   border-radius: 8px;
+   transition: all 0.2s ease-in-out;
+}
+.btn-media-long{
+   padding: 12px 14px;
+   border-radius: 8px;
+}
+.btn-medium{
+   border: 1px solid map-get($btns ,"--basic-500" );
+   background: map-get($btns , "--text-color-white-ag");
+   &:hover{
+      background: map-get($btns, "--danger-500-default");
+      color: map-get($btns , "--text-color-white-ag") ;
+   }
+}
+.btn-long{
+   background: map-get($btns, "--danger-500-default");
+   color: map-get($btns,"--text-color-white-ag");
+   &:hover{
+      background:#dc1c4f;
+   }
+}

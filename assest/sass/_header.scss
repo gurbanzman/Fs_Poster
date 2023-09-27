@@ -1,0 +1,33 @@
+header{
+   padding: 22px 0;
+   border-bottom: 1px solid map-get($btns,"--basic-300");
+   .navbar{
+      @include flexDirection(row, space-between, center, null, null);
+      .logo-content{
+         @include flexDirection(row, null, center, null, 16px);
+         .menu-link{
+            display: none;
+         }
+      }
+      .nav-list{
+         @include flexDirection(row, null, center, null, 48px);
+         .li-content a{
+            transition: all 0.2s ease-in-out;
+            &:hover{
+               color: map-get($btns , "--danger-500-default");
+            }
+         }
+      }
+      .nav-button{
+         @include flexDirection(row, null, center, null, 8px);
+      }
+      .new-button{
+         display: none;
+         a i{
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+         }
+      }
+   }
+}

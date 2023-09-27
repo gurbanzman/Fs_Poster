@@ -1,0 +1,76 @@
+.footer-container{
+   margin-top: 8%;
+   background: map-get($btns,"--basic-200");
+   .fo-content{
+      padding-top: 90px;
+      .copyright{
+         margin-top: 56px;
+         padding: 0 0 24px 0;
+         @include flexDirection(row,space-between,flex-start, null, null);
+         .copy-one a{
+            @include flexDirection(row,null,center, null, 8px);
+            i{
+               color:#8F9BB3;
+            }
+         }
+         .copy-two{
+            @include flexDirection(row,null,center, null, 32px);
+         }
+      }
+      .fo-first{
+         @include flexDirection(row,null,flex-start, wrap, null);
+         margin-left: -16px;
+         margin-right: -16px;
+         .logo-footer{
+            width: 25%;
+            padding-left: 16px;
+            padding-right: 16px;
+            span{
+               width: 50%;
+            }
+            .logo-content{
+               @include flexDirection(row, null, center, null, 16px);
+            }
+            .end-cont{
+               margin-bottom: 24px;
+            }
+            .cont-link{
+               @include flexDirection(row, null, center, null, 12px);
+               margin-bottom: 48px;
+               .cont-span{
+                  padding: 2px 5px;
+                  transition: all 0.2s ease-in-out;
+               }
+            }
+            .icon-link{
+               @include flexDirection(row, null, flex-start, null, 24px);
+               a{
+                  padding: 12px;
+                  border-radius: 50%;
+                  &:hover{
+                     background: map-get($btns,"--basic-300");
+                  }
+                  i{
+                     color:#8F9BB3;
+                     padding: 3px;
+                     transition: all 0.2s ease-in-out;
+                  }
+                  &:hover i{
+                     color: map-get($btns,"--basic-700");
+                  }
+               }
+            }
+            .gap-same{
+               @include flexDirection(column, null, flex-start, null, 24px);
+            }
+         }
+         .footer-main{
+            @include flexDirection(column, null, flex-start, null, 32px);
+         }
+         
+      }
+   }
+}
+#end-f:hover{
+   color: map-get($btns, "--danger-500-default");
+}

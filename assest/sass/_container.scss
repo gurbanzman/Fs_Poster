@@ -1,0 +1,11 @@
+.container{
+   width: 85%;
+   margin: auto;
+}
+.flex{
+   @include flexDirection(column, null, flex-start, null, 24px);
+}
+// .max{
+//    max-width: 100%;
+//    min-width: 100%;
+// }
